@@ -1,0 +1,6 @@
+# Smoke repos do not publish docs or container artifacts.
+exclude = [
+    '^https://avishj\.github\.io/blueprints-smoke-astro-ts-react(/.*)?$',
+    '^https://github\.com/avishj/blueprints-smoke-astro-ts-react/pkgs/container/blueprints-smoke-astro-ts-react(/.*)?$',
+    '^https://hub\.docker\.com/r/avishj/blueprints-smoke-astro-ts-react(/.*)?$',
+]
