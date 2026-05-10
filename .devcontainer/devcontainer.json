@@ -1,0 +1,24 @@
+{
+  "name": "blueprints-smoke-astro-ts-react Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "bun install && uvx --with pre-commit-uv==4.2.1 pre-commit@4.6.0 install --install-hooks",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "astro-build.astro-vscode",
+        "biomejs.biome",
+        "nefrob.vscode-just-syntax",
+        "EditorConfig.EditorConfig",
+        "ms-playwright.playwright",
+        "GitHub.vscode-github-actions",
+        "ms-vscode-remote.remote-containers",
+        "GitHub.vscode-pull-request-github",
+        "usernamehw.errorlens",
+        "DavidAnson.vscode-markdownlint"
+      ]
+    }
+  }
+}
