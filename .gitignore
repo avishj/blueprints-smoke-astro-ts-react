@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2026 Avish J <avish.j@pm.me>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Testing / coverage
+coverage/
+
+# OS
+.DS_Store
+
+# Environment
+.env
+.env.*
+!.env.example
