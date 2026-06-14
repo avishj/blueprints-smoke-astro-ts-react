@@ -1,0 +1,17 @@
+---
+import App from "@components/App";
+import MotionDemo from "@components/motion/MotionDemo";
+import BaseLayout from "@layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <main class="mx-auto flex min-h-screen w-full max-w-5xl flex-col items-start justify-center gap-8 px-6 py-16 sm:px-10">
+    <p class="text-sm uppercase tracking-[0.18em] text-muted">Astro + React + TypeScript + Bun</p>
+    <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">blueprints-smoke-astro-ts-react</h1>
+    <p class="max-w-2xl text-base text-muted sm:text-lg">A modern Astro + React application.</p>
+
+    <App client:load projectName="blueprints-smoke-astro-ts-react" />
+
+    <MotionDemo client:load />
+  </main>
+</BaseLayout>
